@@ -1,0 +1,124 @@
+// Color system
+$body-color: #707070;
+$text-highlight: #999;
+$bc-primary: #ff7500;
+$bc-secondary: #e0170d;
+$bc-third: #0131b4;
+$bc-placeholder: $bc-secondary;
+$text-light: #fff;
+$border: #999;
+$border-light: #CECECE;
+$bground-grey: #eaeaea;
+$bground-grey-lighter: #F5F2F2;
+$bground-grey-darker: #EFEFEF;
+$dark-shades: #0d0d0d;
+$darker-shades: #0d0d0d;
+
+:root[data-theme="theme-light"] {
+    --border-color: #ea7807;
+    --text-color: #333333;
+    --heading-color: #333333;
+    --bg-color: #ffffff;
+    --card-bg-color: #ffffff;
+}
+  
+:root[data-theme="theme-dark"] {
+    --border-color: #ea7807;
+    --text-color: #98989d;
+    --heading-color: #ffffff;
+    --bg-color: #151517;
+    --card-bg-color: #151517;
+}
+
+.myGradient {
+    background-color: transparent;
+    background-image: linear-gradient(to right, #ff7500 0%, #edac1a 100%);
+}
+.myGradient2 {
+    background-color: transparent;
+    background-image: linear-gradient(to right, #e0170d 0%, #bc164d 100%)
+}
+.myGradient3 {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #0131b4 0%, #6050dc 100%);
+}
+
+$bc-radius: 22px;
+
+// $shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+$shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+$filter-primary: invert(31%) sepia(95%) saturate(1495%) hue-rotate(157deg) brightness(95%) contrast(101%);
+$filter-secondary: invert(19%) sepia(99%) saturate(4082%) hue-rotate(345deg) brightness(94%) contrast(97%);
+$filter-body: invert(45%) sepia(0%) saturate(0%) hue-rotate(168deg) brightness(95%) contrast(81%);
+$filter-white: invert(100%) sepia(0%) saturate(21%) hue-rotate(287deg) brightness(104%) contrast(106%);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+// font-family: 'Open Sans', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$heading-font: 'Open Sans', sans-serif;
+$tagline-font: $body-font;
+$nav-font: $heading-font;
+
+$color-transitions: background-color 0.5s ease-in-out, color 0.3s ease-in-out, border 0.5s ease-in-out;
+$transition: all .5s ease-in-out;
+$transition-shadow: box-shadow .5s ease-in-out;
+
+$transition-logo: all .8s ease-in-out;
+
+$border-color: $border-light;
+$primary: $bc-primary;
+$secondary: $bc-secondary;
+
+$gradient-bg-color: #4158D0;
+$gradient-bg-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+
+// Header
+$clip-path-width: 60px;
+$clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
+
+// Clip-path
+$clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+
+// Burger Animation Vars
+$line-color: $bc-primary;
+$line-hover-color: $line-color;
+$line-active-color: $bc-secondary;
+$line-width: 40px;
+$line-spacing: 15px;
+$line-thickness: 1px;
+
+$transition: 0.32s ease-in-out;
+
+// Burger Animation Vars
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($line-spacing / 2);
+$translateX: 0;
+
+.bg-transparent {
+    background: transparent;
+}
+
+// Bootstrap général
+$modal-backdrop-bg: white;
+$modal-content-border-radius: 24px;
+$modal-content-border-color: $body-color;
+$modal-header-border-color: $bc-secondary;
+
+// Responsive basique
+
+@media screen and (min-width: 576px) {
+
+}
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 992px) {
+    
+}
+@media screen and (min-width: 1200px) {
+    
+}

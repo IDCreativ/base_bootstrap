@@ -1,0 +1,11 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+homepage:
+    path: /{_locale}
+    controller: App\Controller\PagesController::home
+    requirements:
+        _locale: '%app_locales%'
+    defaults:
+        template: pages/front/home.html.twig
+        _locale: '%locale%'
