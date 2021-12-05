@@ -1,0 +1,13 @@
+.dropdown-menu {
+    color: #707070;
+    background-color: var(--color-blackest);
+    border: 1px solid var(--color-border);
+}
+
+.dropdown-item {
+    color: var(--color-heading);
+    &:hover, &:focus {
+        color: var(--color-heading);
+        background-color: var(--color-dark);
+    }
+}

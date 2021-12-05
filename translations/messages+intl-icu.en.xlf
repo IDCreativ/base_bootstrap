@@ -10,6 +10,18 @@
                 <source>message.hello</source>
                 <target>Hello</target>
             </trans-unit>
+            <trans-unit id="message.resetPWD_1">
+                <source>message.resetPWD_1</source>
+                <target>To reset your password, please visit the following link</target>
+            </trans-unit>
+            <trans-unit id="message.resetPWD_2">
+                <source>message.resetPWD_2</source>
+                <target>This link will expire in</target>
+            </trans-unit>
+            <trans-unit id="message.resetPWD_btn">
+                <source>message.resetPWD_btn</source>
+                <target>Reset</target>
+            </trans-unit>
             <trans-unit id="menu.home">
                 <source>menu.home</source>
                 <target>Home</target>

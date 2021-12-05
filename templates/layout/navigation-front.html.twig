@@ -1,7 +1,13 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="logo-container me-5 pe-5">
+                {% if websiteData.websiteConfig.logo %}
+                    <img class="custom-logo" src="{{ vich_uploader_asset(websiteData.websiteConfig, 'logoFile') }}" alt="">
+                {% else %}
+                    <img class="custom-logo" src="img/default/yourlogo.svg" alt="">
+                {% endif %}
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

@@ -24,5 +24,17 @@ class PagesController extends AbstractController
             'controller_name' => $controller_name,
         ]);
     }
+
+    // Pages statiques
+
+    /**
+     * @Route("/cgu", name="cgu")
+     */
+    public function cgu()
+    {
+        return $this->render('pages/front/cgu.html.twig', [
+            'controller_name' => "Conditions générales d'utilisation",
+        ]);
+    }
 }
 

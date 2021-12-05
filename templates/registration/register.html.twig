@@ -1,21 +1,37 @@
-{% extends 'base.html.twig' %}
+{% extends 'admin.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Créer un compte - {{ parent() }}{% endblock %}
 
 {% block body %}
-    {% for flashError in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-    {% endfor %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    Créer un compte ou  <a href="{{ path('app_login') }}">me connecter</a>.
+                </div>
+                <div class="card-body">
+                    {% for flashError in app.flashes('verify_email_error') %}
+                        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+                    {% endfor %}
+                    {{ form_start(registrationForm) }}
+                        {{ form_row(registrationForm.email, {
+                            label: 'Votre e-mail'
+                        }) }}
+                        {{ form_row(registrationForm.plainPassword, {
+                            label: 'Votre mot de passe'
+                        }) }}
+                        <div><small class="form-text text-muted mt-4"><a href="{{ path('cgu') }}" title="Condition d'utilisation" target="_blank">Lire les conditions générales d'utilisation</a></small></div>
+                        {{ form_row(registrationForm.agreeTerms, {
+                            label: 'Accepter les CGU'
+                        }) }}
 
-    <h1>Register</h1>
+                        <button type="submit" class="btn btn-primary">S'enregistrer</button>
+                    {{ form_end(registrationForm) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
 {% endblock %}
