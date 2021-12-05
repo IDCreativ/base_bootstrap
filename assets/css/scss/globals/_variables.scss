@@ -1,9 +1,9 @@
 // Color system
 $body-color: #707070;
 $text-highlight: #999;
-$bc-primary: #ff7500;
-$bc-secondary: #e0170d;
-$bc-third: #0131b4;
+$bc-primary: #12c2e9;
+$bc-secondary: #c471ed;
+$bc-third: #f64f59;
 $bc-placeholder: $bc-secondary;
 $text-light: #fff;
 $border: #999;
@@ -13,6 +13,11 @@ $bground-grey-lighter: #F5F2F2;
 $bground-grey-darker: #EFEFEF;
 $dark-shades: #0d0d0d;
 $darker-shades: #0d0d0d;
+
+.myGradient {
+    background-color: transparent;
+    background: linear-gradient(95deg, var(--color-primary) 15%, var(--color-tertiary) 45%, var(--color-pink) 75%, var(--color-secondary) 100%) 95%/200% 100%;
+}
 
 :root[data-theme="theme-light"] {
     --border-color: #ea7807;
@@ -28,19 +33,6 @@ $darker-shades: #0d0d0d;
     --heading-color: #ffffff;
     --bg-color: #151517;
     --card-bg-color: #151517;
-}
-
-.myGradient {
-    background-color: transparent;
-    background-image: linear-gradient(to right, #ff7500 0%, #edac1a 100%);
-}
-.myGradient2 {
-    background-color: transparent;
-    background-image: linear-gradient(to right, #e0170d 0%, #bc164d 100%)
-}
-.myGradient3 {
-    background-color: transparent;
-    background-image: linear-gradient(90deg, #0131b4 0%, #6050dc 100%);
 }
 
 $bc-radius: 22px;
